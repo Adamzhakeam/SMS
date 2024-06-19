@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Team</title>
+    <link rel="stylesheet" href="../../frontend/team/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="team-form">
+            <label for="teamName">Team Name:</label>
+            <input type="text" id="teamName" name="teamName" required>
+
+            <label for="teamDesc">Team Description:</label>
+            <input type="text" id="teamDesc" name="teamDesc" required>
+
+            <label for="teamLogo">Team Logo URL:</label>
+            <input type="url" id="teamLogo" name="teamLogo" required>
+
+            <label for="league">Select League:</label>
+            <select id="league" name="league" required>
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <label for="leagueYear">Select Year:</label>
+            <select id="leagueYear" name="leagueYear" required>
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">Register Team</button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script src="../../frontend/team/script.js"></script>
+</body>
+</html>

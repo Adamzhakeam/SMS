@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Results</title>
+    <link rel="stylesheet" href="../../frontend/tableOfResults/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Match Results</h1>
+        <form id="match-form">
+            <div class="form-group">
+                <label for="league">League:</label>
+                <select id="league" required></select>
+            </div>
+            <div class="form-group">
+                <label for="homeTeam">Home Team:</label>
+                <select id="homeTeam" required></select>
+            </div>
+            <div class="form-group">
+                <label for="awayTeam">Away Team:</label>
+                <select id="awayTeam" required></select>
+            </div>
+            <div class="form-group">
+                <label for="matchDate">Match Date:</label>
+                <input type="date" id="matchDate" required>
+            </div>
+            <div class="form-group">
+                <label for="homeScore">Home Score:</label>
+                <input type="number" id="homeScore" required>
+            </div>
+            <div class="form-group">
+                <label for="awayScore">Away Score:</label>
+                <input type="number" id="awayScore" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script src="../../frontend/tableOfResults/script.js"></script>
+</body>
+</html>
